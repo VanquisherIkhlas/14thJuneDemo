@@ -65,7 +65,8 @@ jobs:
       - name: Generate the Delta Since Last Commit
         run: |
           mkdir delta
-          sfdx sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" -i .sgdignore -d
+          sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output
+          delta/ --generate-delta --source force-app/ 
           cat delta/package/package.xml
           
       - name: Populate auth file with SFDX_URL secret of integration org
