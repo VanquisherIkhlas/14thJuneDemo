@@ -1,15 +1,6 @@
 public class Covid19 {
 
-    //adding comment
-        //ddemo for today 
-    //adding a comment fior test purpose 
-    //test
-//test1 
-    //testing
-    //uahgsu
-//jgfhefhy
-    //testing from one enviorment to another 
-    //hsuasbh
+ //demo for 14th June 1
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
