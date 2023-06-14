@@ -4,6 +4,8 @@ public class Covid19 {
  //removes saridf component
  //changed delta path again
  //scan reports added with mkdir
+
+ //rempoved sonar cloud
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
