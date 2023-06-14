@@ -10,6 +10,7 @@ public class Covid19 {
 
  //siome more changes 
  //demo line added 
+ //asas
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
