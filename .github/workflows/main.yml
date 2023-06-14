@@ -120,10 +120,13 @@ jobs:
           # npm run lint:lwc
           echo "Lint Lightning Web Components"
         
-      - name: Run the Jest coverage script
-        run: |
-          npm run test:unit:coverage
-          echo "Run the Jest coverage script"
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()    # run this step even if previous step failed
+        with:
+          name: JEST Tests            # Name of the check run which will be created
+          path: reports/jest-*.xml    # Path to test results
+          reporter: jest-junit        # Format of test results
           
       - uses: codecov/codecov-action@v3
         with:

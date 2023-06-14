@@ -9,6 +9,7 @@ public class Covid19 {
  //checking without if in JEST
 
  //siome more changes 
+ //demo line added 
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
