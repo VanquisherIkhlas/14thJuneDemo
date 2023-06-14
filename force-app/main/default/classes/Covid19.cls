@@ -3,6 +3,7 @@ public class Covid19 {
  //demo for 14th June 1
  //removes saridf component
  //changed delta path again
+ //scan reports added with mkdir
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
