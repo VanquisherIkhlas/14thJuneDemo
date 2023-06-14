@@ -2,7 +2,7 @@ public class Covid19 {
 
  //demo for 14th June 1
  //removes saridf component
- //changed delta path
+ //changed delta path again
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     

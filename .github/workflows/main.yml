@@ -58,15 +58,14 @@ jobs:
       
 
           
-      - name: Install the SFDX Git Delta Plugin
+      - name: Installing sfdx git delta
         run: |
-          echo 'y' | sfdx plugins:install sfdx-git-delta
+          echo y | sfdx plugins:install sfdx-git-delta
       
       - name: Generate the Delta Since Last Commit
         run: |
           mkdir delta
-          sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output
-          delta/ --generate-delta --source force-app/ 
+          sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output "./delta" --generate-delta --source force-app/ 
           cat delta/package/package.xml
           
       - name: Populate auth file with SFDX_URL secret of integration org
