@@ -121,7 +121,6 @@ jobs:
           echo "Lint Lightning Web Components"
         
       - name: Run the Jest coverage script
-        
         run: |
           npm run test:unit:coverage
           echo "Run the Jest coverage script"

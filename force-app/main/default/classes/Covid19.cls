@@ -7,6 +7,8 @@ public class Covid19 {
 
  //rempoved sonar cloud
  //checking without if in JEST
+
+ //siome more changes 
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     
