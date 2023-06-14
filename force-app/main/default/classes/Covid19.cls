@@ -6,6 +6,7 @@ public class Covid19 {
  //scan reports added with mkdir
 
  //rempoved sonar cloud
+ //checking without if in JEST
     public Integer recoveredInArea=0;
     public static Integer recoveredcountry=0;
     

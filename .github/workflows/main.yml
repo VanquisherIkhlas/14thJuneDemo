@@ -121,7 +121,7 @@ jobs:
           echo "Lint Lightning Web Components"
         
       - name: Run the Jest coverage script
-        if: github.event.pull_request.merged == true
+        
         run: |
           npm run test:unit:coverage
           echo "Run the Jest coverage script"
